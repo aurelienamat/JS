@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+#miaou{
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn{
+    height: 20vh;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    width: 10vw;
+    height: 100%;
+}
