@@ -50,3 +50,24 @@ miaou("Aurelien");
 //DOM
 let maDivMiaou = document.getElementById("miaouu");
 console.log(maDivMiaou);
+
+//EVENEMENT
+var clic = 0;
+var clicnb = 0;
+var testEvent = document.getElementById("miaouu");
+testEvent.addEventListener("click", () => {
+    if (clic > 0){
+        testEvent.innerHTML = "MIAOUUUUUUUUUUUUUUU";
+        testEvent.classList.remove("red");
+        clic--;
+        clicnb++;
+    }else if(clicnb > 20 ){
+        alert("MIAAAAAAAAAAAAOUUUUUUUUUUUUUUUUUUUU");
+    }else{
+        testEvent.classList.add("red");
+        testEvent.innerHTML = "MIAOU";
+        clic++;
+        clicnb++;
+    }
+
+});
